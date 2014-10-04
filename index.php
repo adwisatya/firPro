@@ -5,7 +5,7 @@
 		<tr>
 			<td>
 				<div style="align:center">
-					<img src="http://localhost/ILPI-ENG/wordpress/wp-content/themes/FreshNews/banner.jpg" width="100%"></img>
+					<img src="<?php echo dirname(THEMATER_URL); ?>/banner.jpg" width="100%"></img>
 					<table border width="100%" align="center">
 						<tr>
 							<td border=1 width="100%">
@@ -50,7 +50,7 @@
 		</tr>
 		<tr>
 			<td>
-				<img width="100%" src="http://localhost/ILPI-ENG/wordpress/wp-content/themes/FreshNews/images/default-slides/2.jpg" align="center"
+				<img width="100%" src="<?php echo dirname(THEMATER_URL);?>/images/default-slides/2.jpg" align="center"
 			</td>
 		</tr>
 		<tr>
