@@ -29,7 +29,6 @@
         
         </div><!-- #content -->
     
-        <?php get_sidebars(); ?>
         
         <?php $theme->hook('main_after'); ?>
         
