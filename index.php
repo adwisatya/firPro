@@ -59,7 +59,7 @@
 					<tr>
 						<td valign="top">
 							<!-- tempat news -->
-							<div id="content" width="70%>
+							<div id="content" width="70%">
 									<h2>NEWS</h2>
 									<?php 
 										$is_post_wrap = 0;
