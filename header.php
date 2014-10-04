@@ -16,48 +16,4 @@
 <?php  wp_head(); ?>
 <?php $theme->hook('head'); ?>
 
-</head>
-
-<body <?php body_class(); ?>>
-<?php $theme->hook('html_before'); ?>
-
-    <div id="copyrights" style="margin-top:0px;top:0%" align="center">
-	    <table border style="align:center">
-	        <tr>
-                <td width="100%" height="20px" align="center">
-					 <div class="navbar">
-						<ul class="nav" >
-							<li style="margin-left:20px;margin-right:10px;">
-								<a href="index.php">
-								<i class="icon-th-large"></i>HOME
-								</a>
-							</li>
-							<li class="dropdown" style="margin-left:10px;margin-right:10px;">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-th-large"></i>AMI 2014
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="sejarahami.html">Sejarah AMI</a></li>
-								</ul>
-							</li>
-							<li class="dropdown" style="margin-left:10px;margin-right:10px;">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="icon-th-large"></i>MOTIVASI
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="index.php?page=mantan-cleaning-service.html">Mantan Cleaning Service Masuk ITB</a></li>
-								<li><a href="index.php?page=impian-dan-kesempatan.html">Impian dan Kesempatan</a></li>
-								<li><a href="index.php?page=aku-bisa-masuk-itb.html">Aku Bisa Masuk ITB, Kamu Juga Bisa Kok!</a></li>
-							</ul>
-							</li>
-							<li class="dropdown" style="margin-left:10px;margin-right:10px;">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="icon-th-large"></i>PAGUYUBAN
-							</a>
-						</ul>	
-					</div>												 
-                </td>
-	        </tr>
-	    </table>
-	</div>
-<div id="container">
+</head> 
