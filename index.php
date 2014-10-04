@@ -50,7 +50,7 @@
 		</tr>
 		<tr>
 			<td>
-				<img width="100%" src="<?php echo dirname(THEMATER_URL);?>/images/default-slides/2.jpg" align="center"
+				<img width="100%" src="<?php echo dirname(THEMATER_URL);?>/images/default-slides/2.jpg" align="center" />
 			</td>
 		</tr>
 		<tr>
