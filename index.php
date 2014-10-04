@@ -1,59 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>
-		<?php $theme->meta_title(); ?>
-	</title>
-<link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.css">
-</head>
+<?php get_header(); ?>
 <body>
-	<table border align="center" style="width:100%">
-		<tr>
-			<td>
-				<div style="align:center">
-					<img src="<?php echo dirname(THEMATER_URL); ?>/banner.jpg" width="100%"></img>
-					<table border width="100%" align="center">
-						<tr>
-							<td border=1 width="100%">
-								 <div class="navbar" width="100%">
-									<ul class="nav" style="background-color:#F69B02;width:100%">
-										<li style="margin-left:0px;margin-right:40px;">
-											<a href="index.php">
-											<i class="icon-th-large"></i>HOME
-											</a>
-										</li>
-										<li class="dropdown" style="margin-left:40px;margin-right:40px;">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-												<i class="icon-th-large"></i>NEWS
-											</a>
-											<ul class="dropdown-menu">
-												<li><a href="sejarahami.html">Marine</a></li>
-												<li><a href="sejarahami.html">Civil</a></li>
-
-											</ul>
-										</li>
-										<li class="dropdown" style="margin-left:40px;margin-right:40px;">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<i class="icon-th-large"></i>PROFILE
-										</a>
-										<ul class="dropdown-menu">
-											<li><a href="index.php?page=mantan-cleaning-service.html">About Us</a></li>
-											<li><a href="index.php?page=impian-dan-kesempatan.html">Services</a></li>
-											<li><a href="index.php?page=aku-bisa-masuk-itb.html">Portofolio</a></li>
-										</ul>
-										</li>
-										<li class="dropdown" style="margin-left:40px;margin-right:0px;">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<i class="icon-th-large"></i>CONTACT
-										</a>
-									</ul>	
-								</div>												 
-							</td>
-						</tr>	
-					</table>
-				</div>
-			</td>
-		</tr>
+	<table border align="center" width="100%">
 		<tr>
 			<td>
 				<img width="100%" src="<?php echo dirname(THEMATER_URL);?>/images/default-slides/2.jpg" align="center" />
@@ -115,38 +62,5 @@
 				</table>
 			</td>
 		</tr>
-		<tr>
-			<td align="center" >
-				<div id="copyrights" style="background-color:#F69B02;width:100%;" align="center">
-					<table width="100%" border>
-						<tr>
-							<td width="30%" align="left">
-							   <h2>Services</h2>
-							   <h4>CIVIL ENGINEERING</h4>
-							   <h4>MARINE ENGINEERING</h4>
-							   <h4>METOCEAN & HYDRODYNAMICS ANALYSIS</h4>
-							   <h4>STRUCTURAL ANALYSIS</h4>
-
-							</td>
-							<td width="30%" align="center">
-							   <h2>Portofolio</h2>
-							   <h4>Sediment Transport Study & Analysis</h4>
-							   <h4>Metocean Data Integration Study</h4>
-							   <h4>Integrity Analysis of BOG</h4>
-							   <h4>North Shore Housing Restoration Fund.</h4>					   
-							</td>
-							<td width="30%" align="right">
-							   <h2>Contact Us</h2>
-								<h4>A. Yani 510H Bandung 40122 Indonesia</h4>
-								<h4>022-93395826</h4>
-								<h4>022-93395825</h4>
-								<h4>email: contacts@ilpi-eng.com</h4>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</td>
-		</tr>
 	</table>
-</body>
-</html>
+<?php get_footer(); ?>
