@@ -5,7 +5,7 @@
 		<tr>
 			<td>
 				<div style="align:center">
-					<img src="http://localhost/ILPI-ENG/wordpress/wp-content/themes/FreshNews/banner.jpg" width="100%"></img>
+					<img src="<?php echo THEMATER_URL; ?>banner.jpg" width="100%"></img>
 					<table border width="100%" align="center">
 						<tr>
 							<td border=1 width="100%">
@@ -21,8 +21,8 @@
 												<i class="icon-th-large"></i>NEWS
 											</a>
 											<ul class="dropdown-menu">
-												<li><a href="sejarahami.html">Marine</a></li>
-												<li><a href="sejarahami.html">Civil</a></li>
+												<li><a href="marine.html">Marine</a></li>
+												<li><a href="civil.html">Civil</a></li>
 
 											</ul>
 										</li>
@@ -31,13 +31,13 @@
 										<i class="icon-th-large"></i>PROFILE
 										</a>
 										<ul class="dropdown-menu">
-											<li><a href="index.php?page=mantan-cleaning-service.html">About Us</a></li>
-											<li><a href="index.php?page=impian-dan-kesempatan.html">Services</a></li>
-											<li><a href="index.php?page=aku-bisa-masuk-itb.html">Portofolio</a></li>
+											<li><a href="about_us.php">About Us</a></li>
+											<li><a href="services.php">Services</a></li>
+											<li><a href="portofolio.php">Portofolio</a></li>
 										</ul>
 										</li>
 										<li class="dropdown" style="margin-left:40px;margin-right:0px;">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<a href="contact.php" class="dropdown-toggle" data-toggle="dropdown">
 										<i class="icon-th-large"></i>CONTACT
 										</a>
 									</ul>	
@@ -50,7 +50,7 @@
 		</tr>
 		<tr>
 			<td>
-				<img width="100%" src="http://localhost/ILPI-ENG/wordpress/wp-content/themes/FreshNews/images/default-slides/2.jpg" align="center"
+				<img width="100%" src="<?php echo THEMATER_URL; ?>/images/default-slides/2.jpg" align="center">
 			</td>
 		</tr>
 		<tr>
@@ -59,7 +59,7 @@
 					<tr>
 						<td valign="top">
 							<!-- tempat news -->
-							<div id="content" width="70%>
+							<div id="content" width="70%">
 									<h2>NEWS</h2>
 									<?php 
 										$is_post_wrap = 0;
@@ -77,7 +77,7 @@
 
 											$is_post_wrap++;
 												if($is_post_wrap == '1') {
-													?><div class="post-wrap clearfix"><?php
+													?><div><?php
 												}
 												get_template_part('post', 'homepage');
 												
@@ -91,14 +91,7 @@
 										else :
 											get_template_part('post', 'noresults');
 										endif; 
-											
-											if($is_post_wrap == '1') {
-												?>
-												</div>
-												<?php
-											} 
-										
-										get_template_part('navigation');
+
 									?>
 							</div>
 						</td>
@@ -112,7 +105,7 @@
 		<tr>
 			<td align="center" >
 				<div id="copyrights" style="background-color:#F69B02;width:100%;" align="center">
-					<table width="100%" border>
+					<table width="100%" border="0" cellpadding="20px">
 						<tr>
 							<td width="30%" align="left">
 							   <h2>Services</h2>
