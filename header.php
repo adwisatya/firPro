@@ -7,24 +7,31 @@
 	</title><link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.css">
 </head>
 <body>
-	<table border align="center" style="width:100%">
+	<table align="center" style="width:100%;border:none;margin:0px;">
 		<tr>
-			<td>
-				<div style="align:center">
-					<img src="<?php echo dirname(THEMATER_URL); ?>/banner.jpg" width="100%"></img>
-					<table border width="100%" align="center">
-						<tr>
-							<td border=1 width="100%">
-								 <div class="navbar" width="100%">
-									<ul class="nav" style="background-color:#F69B02;width:100%">
-										<li style="margin-left:0px;margin-right:40px;">
-											<a href="index.php">
-											<i class="icon-th-large"></i>HOME
-											</a>
-										</li>
-										<li class="dropdown" style="margin-left:40px;margin-right:40px;">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-												<i class="icon-th-large"></i>NEWS
+			<td colspan="4">
+					<img src="<?php echo dirname(THEMATER_URL); ?>/images/banner.jpg" width="100%"></img>
+				</td>
+			</tr>
+			<tr id="separator"><td colspan="4"></td></tr>
+			<tr style="background-color:#F69B02;">
+				<td id="td-menu-left">
+					<div class="navbar" style="width:100%;" >
+						<ul class="nav" style="background-color:#F69B02;width:100%;">
+							<li class="dropdown">
+								<a href="index.php">
+								Home
+								</a>
+							</li>
+						</ul>
+					</div>
+				</td>
+							<td id="td-menu-left">
+								<div class="navbar" width="100%">
+									<ul class="nav" style="background-color:#F69B02;width:100%;">
+										<li class="dropdown">
+											<a href="news.php" class="dropdown-toggle" data-toggle="dropdown">
+												<i class="icon-th-large"></i>News
 											</a>
 											<ul class="dropdown-menu">
 												<li><a href="sejarahami.html">Marine</a></li>
@@ -32,9 +39,15 @@
 
 											</ul>
 										</li>
-										<li class="dropdown" style="margin-left:40px;margin-right:40px;">
+									</ul>
+								</div>
+							</td>
+							<td id="td-menu-left">
+								<div class="navbar" width="100%">
+									<ul class="nav" style="background-color:#F69B02;width:100%;">
+										<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<i class="icon-th-large"></i>PROFILE
+										<i class="icon-th-large"></i>Profil
 										</a>
 										<ul class="dropdown-menu">
 											<li><a href="index.php?page=mantan-cleaning-service.html">About Us</a></li>
@@ -42,15 +55,22 @@
 											<li><a href="index.php?page=aku-bisa-masuk-itb.html">Portofolio</a></li>
 										</ul>
 										</li>
-										<li class="dropdown" style="margin-left:40px;margin-right:0px;">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<i class="icon-th-large"></i>CONTACT
+									</ul>
+								</div>
+							</td>
+							<td id="td-menu-right">
+								<div class="navbar" width="100%">
+									<ul class="nav" style="background-color:#F69B02;width:100%;">
+										<li class="dropdown">
+										<a href="contact.php" class="dropdown-toggle" data-toggle="dropdown">
+										<i class="icon-th-large"></i>Contact
 										</a>
+										</li>
 									</ul>	
 								</div>												 
 							</td>
-						</tr>	
-					</table>
+						</tr>
+						<tr id="separator"><td colspan="4"></td></tr>	
 				</div>
 			</td>
 		</tr>
