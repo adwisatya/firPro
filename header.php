@@ -5,7 +5,6 @@
 <title><?php $theme->meta_title(); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <?php $theme->hook('meta'); ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/defaults.css" type="text/css" media="screen, projection" />
 <!--[if lt IE 8]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
@@ -18,11 +17,13 @@
 
 </head> 
 <link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.min.css">
+
 <body <?php body_class(); ?>>
 	<div id="container" style="margin-top:0px;">
 		<div style="align:center">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" width="100%">
-			<table border width="100%" align="center">
+			<table width="100%" align="center">
 				<tr>
 					<td border=1 width="100%">
 						 <div class="navbar" width="100%">
@@ -32,12 +33,12 @@
 									<i class="icon-th-large"></i>HOME
 									</a>
 								</li>
-								<li class="dropdown" style="margin-left:40px;margin-right:40px;">
+								<li class="dropdown">
 									<a href="<?php echo get_template_directory_uri(); ?>/news" class="dropdown-toggle" data-toggle="dropdown">
 										<i class="icon-th-large"></i>NEWS
 									</a>
 								</li>
-								<li class="dropdown" style="margin-left:40px;margin-right:40px;">
+								<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="icon-th-large"></i>PROFILE
 								</a>
@@ -47,7 +48,7 @@
 									<li><a href="portofolio.php">Portofolio</a></li>
 								</ul>
 								</li>
-								<li class="dropdown" style="margin-left:40px;margin-right:0px;">
+								<li class="dropdown">
 								<a href="<?php echo get_template_directory_uri(); ?>/contact.php" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="icon-th-large"></i>CONTACT
 								</a>

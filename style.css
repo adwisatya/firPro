@@ -33,7 +33,6 @@
 
 body {
     /*background: url('images/background.png') fixed;*/
-    color: #555555;
 }
 
 a {
@@ -767,15 +766,15 @@ a:focus {
 
 #footer {
     margin-bottom:15px;
+
 }
 
 #copyrights {
-    color: #FFFFFF;
-    border-top: 3px solid #F94306;
-    text-align: center;
-    background-color: #3F3F3F;
+    color:black;
+    text-align: left;
     width:960px;
-    margin-left: 0px;
+	background:#F69B02;
+	height:175px;
     /*
 	left:0%;
     position:absolute;
@@ -788,7 +787,28 @@ a:focus {
     background-image: linear-gradient(to bottom, #3F3F3F, #252525);
     */
 }
-
+#footer-kiri{
+	float: left;
+	width: 300px;
+	height: 175px;
+	background-color: #F69B02;
+	margin-left: 15px;
+}
+#footer-tengah{
+	float: left;
+	width: 300px;
+	background-color: #F69B02;
+	height: 175px;
+	margin-left:7.5px;
+	margin-right:7.5px;
+}
+#footer-kanan{
+	float: right;
+	width: 300px;
+	background-color: #F69B02;
+	height: 175px;
+	margin-right:15px;
+}
 #copyrights a {
     color: #FFFFFF;
 } 
@@ -1667,7 +1687,7 @@ h3#reply-title {
         display: none;
         text-align: center;
     }
-    
+
     #footer-container #copyrights, #footer-container #credits {
         padding: 5px 0;
     }
