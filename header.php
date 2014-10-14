@@ -5,10 +5,10 @@
 <title><?php $theme->meta_title(); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <?php $theme->hook('meta'); ?>
-<link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.css">
-<link rel="stylesheet" href="<?php echo THEMATER_URL; ?>/css/reset.css" type="text/css" media="screen, projection" />
-<link rel="stylesheet" href="<?php echo THEMATER_URL; ?>/css/defaults.css" type="text/css" media="screen, projection" />
-<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo THEMATER_URL; ?>/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/defaults.css" type="text/css" media="screen, projection" />
+<!--[if lt IE 8]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen, projection" />
 
@@ -17,3 +17,43 @@
 <?php $theme->hook('head'); ?>
 
 </head> 
+<link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.css">
+<body <?php body_class(); ?>>
+	<div id="container" style="margin-top:0px;">
+		<div style="align:center">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" width="100%">
+			<table border width="100%" align="center">
+				<tr>
+					<td border=1 width="100%">
+						 <div class="navbar" width="100%">
+							<ul class="nav" style="background-color:#F69B02;width:100%">
+								<li style="margin-left:0px;margin-right:40px;">
+									<a href="<?php echo get_template_directory_uri(); ?>/index.php">
+									<i class="icon-th-large"></i>HOME
+									</a>
+								</li>
+								<li class="dropdown" style="margin-left:40px;margin-right:40px;">
+									<a href="<?php echo get_template_directory_uri(); ?>/news" class="dropdown-toggle" data-toggle="dropdown">
+										<i class="icon-th-large"></i>NEWS
+									</a>
+								</li>
+								<li class="dropdown" style="margin-left:40px;margin-right:40px;">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="icon-th-large"></i>PROFILE
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="about_us.php">About Us</a></li>
+									<li><a href="services.php">Services</a></li>
+									<li><a href="portofolio.php">Portofolio</a></li>
+								</ul>
+								</li>
+								<li class="dropdown" style="margin-left:40px;margin-right:0px;">
+								<a href="<?php echo get_template_directory_uri(); ?>/contact.php" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="icon-th-large"></i>CONTACT
+								</a>
+							</ul>	
+						</div>												 
+					</td>
+				</tr>	
+			</table>
+		</div>
