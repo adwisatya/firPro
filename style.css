@@ -1725,3 +1725,12 @@ h3#reply-title {
 td{
     vertical-align: top;
 }
+
+/* custom dari ARyya */
+#artikel{
+	/*background:black;*/
+	margin-left:15px;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:600px;
+}
