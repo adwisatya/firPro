@@ -80,6 +80,32 @@ a:focus {
     margin-left: 15px;
 }
 
+.sidebarindeks{
+	background-color:#F69B02;
+	text-align:justify;
+	font-family: arial;
+	font-weight:none;
+}
+#sidebarindeks h2{
+	font-weight:none;
+	text-align: justify;
+}
+#sidebarindeks h3{
+	font-weight: 12px;
+	font-size: 20px;
+	text-align: justify;
+
+}
+#sidebarindeks h4{
+	font-weight: 12px;
+	font-size: 16px;
+	text-align: justify;
+
+}
+#sidebarindeks table{
+	background-color: #F69B02;
+	margin-top:5px;
+}
 /* =HEADER
 -------------------------------------------------------------- */
 

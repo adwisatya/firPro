@@ -1,8 +1,7 @@
-
-<div style="background-color:#F69B02;align:justify;width:25%;margin-right:1%;margin-top:10px">
-	<table cellpadding="20px">
+<div id="sidebarindeks">
+	<table cellpadding="20px" >
 		<tr>
-			<td>
+			<td valign="top">
 				<h2>About Us </h2>
 				<h3>Our Mission</h3>
 				<h4>is to deliver finest engineering designs and analysis in all our business lines with verified & validated methods for fulfillment of regulations and our clients’needs</h4>

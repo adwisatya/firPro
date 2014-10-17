@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 	<div id="container" style="margin-top:0px;">
 		<div style="align:center">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" width="100%">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" width="960px" height="100px">
 			<table width="100%" align="center">
 				<tr>
 					<td border=1 width="100%">
