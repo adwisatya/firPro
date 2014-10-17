@@ -1,5 +1,8 @@
-<html>
-
+<?php session_start(); global $theme;
+/**
+* Template Name: Services
+*/
+?>
 	<?php
 		if(!isset($civil_desc)){
 			$civil_desc="gantent";
@@ -34,39 +37,35 @@
 
 		img{
 			width:100%;
-		}
-
-		
-
-			
+		}		
 	</style>
-	<body>
+<?php global $theme; get_header(); ?>
+
 		<div class="list-services" >
-				<div id="civil-eng" onclick="OnCivil()">
+				<div id="civil-eng" onclick="OnCivil()" style="margin-top:10px">
 					<div class="judul"> <span class="p1" >Civil  </span>  Engineering </div>
-					<img src="05.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/services/05.png" width="960px" >
 					<p id="civil-desc"></p>
 				</div>
 
-				<div id="marine-eng" onclick="OnMarine()">
+				<div id="marine-eng" onclick="OnMarine()" style="margin-top:10px">
 					<div class="judul"> <span class="p1" >Marine  </span>  Engineering </div>
-					<img src="02.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/services/02.png" width="960px">
 					<p id="marine-desc"></p>
 				</div>
 
-				<div id="metocean-eng" onclick="OnMetocean()">
+				<div id="metocean-eng" onclick="OnMetocean()"style="margin-top:10px">
 					<div class="judul"> <span class="p1" >Metocean and Hydrodynamics  </span>  Analysis </div>
-					<img src="07.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/services/07.png" width="960px">
 					<p id="metocean-desc"></p>
 				</div>
 
-				<div id="structural-eng" onclick="OnStructural()">
+				<div id="structural-eng" onclick="OnStructural()" style="margin-top:10px">
 					<div class="judul"> <span class="p1" >Structural  </span>  Analysis </div>
-					<img src="04.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/services/04.png" width="960px">
 					<p id="structural-desc"></p>
 				</div>
 		</div>
-	</body>
 	<script>
 		function OnCivil(){
 			document.getElementById("civil-desc").innerHTML = "We provide services in field development planning, conceptual design, and engineering of: <ul><li>building(residental, commercial, educational, and industries)</li><li>foundation and geotechnical analysis</li><li>irrigation, flood control, canal, and other water infrastructures</li></ul>";
@@ -81,4 +80,5 @@
 			document.getElementById("structural-desc").innerHTML = "Our people always check the <b>validity</b> of the analysis and the <b>accuracy</b> of the analysis results. If it is necessary, <b>verification</b> of the result also can be done by our engineers.<br/><br/><b>Original analysis softwares</b> and <b>in-house programs</b> are used to avoid unnecessary defects in analysis results, maintain our company integrity, and support the intellectual property rights.";
 		}
 	</script>
-</html>
+
+<?php get_footer(); ?>

@@ -49,5 +49,3 @@
             comments_template('', true); 
         }
     ?>
-    ?>
-    ?>
