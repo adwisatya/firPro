@@ -8,7 +8,7 @@
 					<p>METOCEAN & HYDRODYNAMICS ANALYSIS
 					STRUCTURAL ANALYSIS</p>
 			</div>
-			<div id="footer-tengah">
+			<div id="footer-tengah" style="display:none">
 				<h3>Portofolio</h3>
 				<p>Sediment Transport Study & Analysis</p>
 				<p>Metocean Data Integration Study</p>
