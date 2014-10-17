@@ -30,7 +30,7 @@
 								<div class="navbar" width="100%">
 									<ul class="nav" style="background-color:#F69B02;width:100%;">
 										<li class="dropdown">
-											<a href="news.php" class="dropdown-toggle" data-toggle="dropdown">
+											<a href="news" class="dropdown-toggle" data-toggle="dropdown">
 												<i class="icon-th-large"></i>News
 											</a>
 											<ul class="dropdown-menu">
@@ -62,7 +62,7 @@
 								<div class="navbar" width="100%">
 									<ul class="nav" style="background-color:#F69B02;width:100%;">
 										<li class="dropdown">
-										<a href="contact.php" class="dropdown-toggle" data-toggle="dropdown">
+										<a href="contact" class="dropdown-toggle" data-toggle="dropdown">
 										<i class="icon-th-large"></i>Contact
 										</a>
 										</li>
