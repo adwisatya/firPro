@@ -8,7 +8,7 @@
 			$civil_desc="gantent";
 		}
 	?>
-
+ <!--
 	<style>
 		p,li{
 			font-family: Arial;
@@ -39,30 +39,31 @@
 			width:100%;
 		}		
 	</style>
+	-->
 <?php global $theme; get_header(); ?>
 
-		<div class="list-services" >
+		<div class="list-services" width="960px">
 				<div id="civil-eng" onclick="OnCivil()" style="margin-top:10px">
 					<div class="judul"> <span class="p1" >Civil  </span>  Engineering </div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/services/05.png" width="960px" >
+					<img src="<?php echo get_template_directory_uri(); ?>/images/services/05.png" width="920px" >
 					<p id="civil-desc"></p>
 				</div>
 
 				<div id="marine-eng" onclick="OnMarine()" style="margin-top:10px">
 					<div class="judul"> <span class="p1" >Marine  </span>  Engineering </div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/services/02.png" width="960px">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/services/02.png" width="920px">
 					<p id="marine-desc"></p>
 				</div>
 
 				<div id="metocean-eng" onclick="OnMetocean()"style="margin-top:10px">
 					<div class="judul"> <span class="p1" >Metocean and Hydrodynamics  </span>  Analysis </div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/services/07.png" width="960px">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/services/07.png" width="920px">
 					<p id="metocean-desc"></p>
 				</div>
 
-				<div id="structural-eng" onclick="OnStructural()" style="margin-top:10px">
+				<div id="structural-eng" onclick="OnStructural()" >
 					<div class="judul"> <span class="p1" >Structural  </span>  Analysis </div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/services/04.png" width="960px">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/services/04.png" width="920px">
 					<p id="structural-desc"></p>
 				</div>
 		</div>

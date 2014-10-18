@@ -3,7 +3,7 @@
 		<table>
 			<tr>
 				<td>
-					<?php the_title(); ?>
+					<a href="<?php the_permalink(); ?>"><b><?php the_title(); ?></b></a>
 				</td>
 				<td>
 					<p><?php echo get_the_date(); ?></p>
