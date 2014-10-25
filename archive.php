@@ -1,10 +1,10 @@
 <?php global $theme; get_header(); ?>
 
-    <div id="main">
+    <div>
     
         <?php $theme->hook('main_before'); ?>
     
-        <div id="content">
+        <div>
             
             <?php $theme->hook('content_before'); ?>
         
@@ -64,9 +64,7 @@
             <?php $theme->hook('content_after'); ?>
         
         </div><!-- #content -->
-    
-        <?php get_sidebars(); ?>
-        
+            
         <?php $theme->hook('main_after'); ?>
         
     </div><!-- #main -->

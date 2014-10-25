@@ -29,7 +29,7 @@
 						 <div class="navbar" width="100%">
 							<ul class="nav" style="background-color:#F69B02;width:100%">
 								<li style="margin-left:0px;margin-right:40px;">
-									<a href="<?php echo get_template_directory_uri(); ?>/index.php">
+									<a href="index.php">
 									<i class="icon-th-large"></i>HOME
 									</a>
 								</li>

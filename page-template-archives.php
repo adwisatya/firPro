@@ -5,13 +5,7 @@
 
 global $theme; get_header(); ?>
 
-    <div id="main">
-    
-        <?php $theme->hook('main_before'); ?>
-
-        <div id="content">
             
-            <?php $theme->hook('content_before'); ?>
         
             <?php 
                 if (have_posts()) : while (have_posts()) : the_post();
@@ -26,7 +20,6 @@ global $theme; get_header(); ?>
                 endif; 
             ?>
             
-            <div class="sitemap">
             
                 <div>
                     <h2><?php _e('The Last 20 Posts', 'themater'); ?></h2>
@@ -53,17 +46,5 @@ global $theme; get_header(); ?>
                         </ul>
                     </div>
                 </div>
-                
-            </div>
-            
-            <?php $theme->hook('content_after'); ?>
-        
-        </div><!-- #content -->
-    
-        <?php get_sidebars(); ?>
-        
-        <?php $theme->hook('main_after'); ?>
-        
-    </div><!-- #main -->
     
 <?php get_footer(); ?>

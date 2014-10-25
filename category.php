@@ -1,13 +1,4 @@
 <?php global $theme; get_header(); ?>
-
-    <div id="main">
-    
-        <?php $theme->hook('main_before'); ?>
-    
-        <div id="content">
-        
-            <?php $theme->hook('content_before'); ?>
-        
             <h2 class="page-title"><?php printf( __( 'Category Archives: <span>%s</span>', 'themater' ), single_cat_title( '', false ) ); ?></h2>
             
             <?php 
@@ -47,15 +38,6 @@
                 
                 get_template_part('navigation');
             ?>
-            
-            <?php $theme->hook('content_after'); ?>
-        
-        </div><!-- #content -->
-    
-        <?php get_sidebars(); ?>
-        
-        <?php $theme->hook('main_after'); ?>
-        
-    </div><!-- #main -->
+
     
 <?php get_footer(); ?>
