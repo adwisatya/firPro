@@ -8,12 +8,7 @@
 					<p>METOCEAN & HYDRODYNAMICS ANALYSIS
 					STRUCTURAL ANALYSIS</p>
 			</div>
-			<div id="footer-tengah" style="display:none">
-				<h3>Portofolio</h3>
-				<p>Sediment Transport Study & Analysis</p>
-				<p>Metocean Data Integration Study</p>
-				<p>Integrity Analysis of BOG</p>
-				<p>North Shore Housing Restoration Fund.</p>					   
+			<div id="footer-tengah" align="center">
 			</div>
 			<div id="footer-kanan">
 				<h3>Contact Us</h3>

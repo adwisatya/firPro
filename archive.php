@@ -67,6 +67,5 @@
             
         <?php $theme->hook('main_after'); ?>
         
-    </div><!-- #main -->
     
 <?php get_footer(); ?>

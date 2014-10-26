@@ -20,21 +20,21 @@
 <link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.min.css">
 
 <body <?php body_class(); ?>>
-	<div id="container" style="margin-top:0px;">
+	<div id="container" style="margin-top:0px;margin-bottom:25px;">
 		<div style="align:center">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" width="960px" height="100px">
 			<table width="100%" align="center">
 				<tr>
 					<td border=1 width="100%">
-						 <div class="navbar" width="100%">
+						 <div class="navbar" width="100%" style="margin-left:0px;margin-right:0px;">
 							<ul class="nav" style="background-color:#F69B02;width:100%">
 								<li style="margin-left:0px;margin-right:40px;">
-									<a href="index.php">
+									<a href="http://localhost/ILPI-ENG/wordpress/">
 									<i class="icon-th-large"></i>HOME
 									</a>
 								</li>
 								<li class="dropdown">
-									<a href="<?php echo get_template_directory_uri(); ?>/news" class="dropdown-toggle" data-toggle="dropdown">
+									<a href="http://localhost/ILPI-ENG/wordpress/news-2/" class="dropdown-toggle" data-toggle="dropdown">
 										<i class="icon-th-large"></i>NEWS
 									</a>
 								</li>
@@ -43,17 +43,17 @@
 								<i class="icon-th-large"></i>PROFILE
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="about_us.php">About Us</a></li>
-									<li><a href="services.php">Services</a></li>
-									<li><a href="portofolio.php">Portofolio</a></li>
+									<li><a href="http://localhost/ILPI-ENG/wordpress/aboutus/">About Us</a></li>
+									<li><a href="http://localhost/ILPI-ENG/wordpress/service/">Services</a></li>
+									<li><a href="http://localhost/ILPI-ENG/wordpress/portofolio-2/">Portofolio</a></li>
 								</ul>
 								</li>
 								<li class="dropdown">
-								<a href="<?php echo get_template_directory_uri(); ?>/contact.php" class="dropdown-toggle" data-toggle="dropdown">
+								<a href="http://localhost/ILPI-ENG/wordpress/contact/" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="icon-th-large"></i>CONTACT
 								</a>
 							</ul>	
-						</div>												 
+						</div>
 					</td>
 				</tr>	
 			</table>

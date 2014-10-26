@@ -20,31 +20,35 @@ global $theme; get_header(); ?>
                 endif; 
             ?>
             
-            
-                <div>
-                    <h2><?php _e('The Last 20 Posts', 'themater'); ?></h2>
-                    
-                    <ul class="sitemap-list">
-                        <?php wp_get_archives('type=postbypost&limit=20&show_post_count=1'); ?>
-                    </ul>
-                    
-                </div>
-                
-                <div class="clearfix">
-                    
-                    <div class="alignleft sitemap-col-archives">
-                        <h2><?php _e('Categories', 'themater'); ?></h2>
-                        <ul class="sitemap-list">
-                            <?php wp_list_categories('title_li=&show_count=1'); ?>
-                        </ul>
-                    </div>
-                    
-                    <div class="alignleft sitemap-col-archives">
-                        <h2><?php _e('Monthly Archives', 'themater'); ?></h2>
-                        <ul class="sitemap-list">
-                            <?php wp_get_archives('type=monthly&show_post_count=1'); ?>
-                        </ul>
-                    </div>
+				<div style="height:450px">
+					<table>
+						<tr>
+							<td>
+								<div id="footer-kiri" style="background-color:white">
+									<h3>Lastest 20 Posts</h3>
+									
+									<ul class="sitemap-list">
+										<?php wp_get_archives('type=postbypost&limit=20&show_post_count=1'); ?>
+									</ul>
+									
+								</div>
+												
+								<div id="footer-tengah" style="background-color:white">
+									<h3>Categories</h3>
+									<ul class="sitemap-list">
+										<?php wp_list_categories('title_li=&show_count=1'); ?>
+									</ul>
+								</div>
+								
+								<div id="footer-kanan" style="background-color:white">
+									<h3>Monthly Archives</h3>
+									<ul class="sitemap-list">
+										<?php wp_get_archives('type=monthly&show_post_count=1'); ?>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
                 </div>
     
 <?php get_footer(); ?>
