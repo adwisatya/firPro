@@ -29,12 +29,12 @@
 						 <div class="navbar" width="100%" style="margin-left:0px;margin-right:0px;">
 							<ul class="nav" style="background-color:#F69B02;width:100%">
 								<li style="margin-left:0px;margin-right:40px;">
-									<a href="http://localhost/ILPI-ENG/wordpress/">
+									<a href="<?php echo dirname(dirname(dirname(get_template_directory_uri()))); ?>">
 									<i class="icon-th-large"></i>HOME
 									</a>
 								</li>
 								<li class="dropdown">
-									<a href="http://localhost/ILPI-ENG/wordpress/news-2/" class="dropdown-toggle" data-toggle="dropdown">
+									<a href="<?php echo dirname(dirname(dirname(get_template_directory_uri()))); ?>/news-2/" class="dropdown-toggle" data-toggle="dropdown">
 										<i class="icon-th-large"></i>NEWS
 									</a>
 								</li>
@@ -43,13 +43,13 @@
 								<i class="icon-th-large"></i>PROFILE
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="http://localhost/ILPI-ENG/wordpress/aboutus/">About Us</a></li>
-									<li><a href="http://localhost/ILPI-ENG/wordpress/service/">Services</a></li>
-									<li><a href="http://localhost/ILPI-ENG/wordpress/portofolio-2/">Portofolio</a></li>
+									<li><a href="<?php echo dirname(dirname(dirname(get_template_directory_uri()))); ?>/aboutus/">About Us</a></li>
+									<li><a href="<?php echo dirname(dirname(dirname(get_template_directory_uri()))); ?>/service/">Services</a></li>
+									<li><a href="<?php echo dirname(dirname(dirname(get_template_directory_uri()))); ?>/portofolio-2/">Portofolio</a></li>
 								</ul>
 								</li>
 								<li class="dropdown">
-								<a href="http://localhost/ILPI-ENG/wordpress/contact/" class="dropdown-toggle" data-toggle="dropdown">
+								<a href="<?php echo dirname(dirname(dirname(get_template_directory_uri()))); ?>/contact/" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="icon-th-large"></i>CONTACT
 								</a>
 							</ul>	
