@@ -1764,3 +1764,17 @@ td{
 	margin-bottom:5px;
 	width:600px;
 }
+
+
+/* custom dari yusuf */
+.contact-table{
+    align:center;
+}
+.ct-kiri{
+    width:60%;
+    padding-left: 15px;
+}
+.ct-kanan{
+    width:40%;
+    padding-left: 15px;
+}
