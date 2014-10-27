@@ -4,7 +4,7 @@
 */
 ?>
 <?php get_header() ?>
-	<table align="center" style="width:100%;">
+	<table class="contact-table" name="contact-table" align="center">
 		<!--row 2 : map-->
 		<tr>
 			<td align="center" colspan="2">
@@ -13,10 +13,9 @@
 			</td>
 		</tr>
 			<!--row 3 : content-->
-		<tr >
+		<tr>
 			<?php //row 3, col 1 : contact, content is generated from the wp-admin ?>
-			<td width="70%" valign="top" >
-				<div style="margin-left:15px">
+			<td class="ct-kiri" name="ct-kiri">
 					<br />
 					<font color="#CC0500" size="5">Kantor ILPI</font>
 					<br>
@@ -25,12 +24,10 @@
 					Indonesia<br /><br />
 					Tel : (022) 93395826<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(022) 93395825<br/>
-					Email : contacs@ilpi-eng.com
-				</div>
+					Email : contacts@ilpi-eng.com
 			</td>
 				<?php //row 3, col 2 : contact form, will send to database or e-mail?>
-			<td>
-				<div style="margin-right:15px">
+			<td class="ct-kanan" name="ct-kanan">
 				<?php
 				if ($_POST['contact_form_submit'] ) {
 				if(!$_POST['contact_form_name'] || !$_POST['contact_form_email'] || !$_POST['contact_form_subject'] || !$_POST['contact_form_question'] || !$_POST['contact_form_message']) {
@@ -40,7 +37,8 @@
 				} elseif(($_SESSION['contact_form_number_one'] + $_SESSION['contact_form_number_two']) != $_POST['contact_form_question']) {
 				?><div class="error"><?php _e('You entered the wrong number in captcha!','themater'); ?></div><?php
 				} else {
-				wp_mail($theme->get_option('contact_form_email'), sprintf( '[%s] ' . esc_html($_POST['contact_form_subject']), get_bloginfo('name') ), esc_html($_POST['contact_form_message']),'From: "'. esc_html($_POST['contact_form_name']) .'" <' . esc_html($_POST['contact_form_email']) . '>');
+				mail('contacts@ilpi-eng.com', sprintf( '[%s] ' . esc_html($_POST['contact_form_subject']), get_bloginfo('name') ), esc_html($_POST['contact_form_message']));
+				//wp_mail($theme->get_option('contact_form_email'), sprintf( '[%s] ' . esc_html($_POST['contact_form_subject']), get_bloginfo('name') ), esc_html($_POST['contact_form_message']),'From: "'. esc_html($_POST['contact_form_name']) .'" <' . esc_html($_POST['contact_form_email']) . '>');
 				unset($_POST);
 				?><div class="message"><?php _e('Thanks for contacting us.','themater'); ?></div><?php
 				}
@@ -54,7 +52,7 @@
 				?>
 				<form method="post" action="">
 					<input type="hidden" name="contact_form_submit" value="true" />
-					<h3><font color="#CC0500">Contact Us Form</font></h3>
+					<h3><font color="#CC0500">Contact Form</font></h3>
 					<div class="contact-form-label alignleft <?php if($_POST && !$_POST['contact_form_name']) { echo 'contact-form-required'; } ?>"><?php _e('Name','themater'); ?>:</div>
 					<div class="contact-form-input"><input type="text" name="contact_form_name" value="<?php if ( isset($_POST['contact_form_name']) ) { echo esc_attr($_POST['contact_form_name']); } ?>" /></div>
 					<div class="contact-form-label alignleft <?php if($_POST && !$_POST['contact_form_email']) { echo 'contact-form-required'; } ?>"><?php _e('Email','themater'); ?>:</div>
@@ -64,12 +62,11 @@
 					<div class="contact-form-label alignleft <?php if($_POST && !$_POST['contact_form_subject']) { echo 'contact-form-required'; } ?>"><?php _e('Subject','themater'); ?>:</div>
 					<div class="contact-form-input"><input type="text" name="contact_form_subject" value="<?php if ( isset($_POST['contact_form_subject']) ) { echo esc_attr($_POST['contact_form_subject']); } ?>" /></div>
 					<div class="contact-form-label alignleft <?php if($_POST && !$_POST['contact_form_message']) { echo 'contact-form-required'; } ?>"><?php _e('Message','themater'); ?>:</div>
-					<div class="contact-form-input"><textarea name="contact_form_message" ><?php if ( isset($_POST['contact_form_message']) ) { echo esc_textarea($_POST['contact_form_message']); } ?></textarea></div>
+					<div class="contact-form-input"><textarea name="contact_form_message" rows="5"><?php if ( isset($_POST['contact_form_message']) ) { echo esc_textarea($_POST['contact_form_message']); } ?></textarea></div>
 					<div class="contact-form-label alignleft">&nbsp;</div>
 					<div class="contact-form-input" style="text-align: center;"><input type="submit" value="<?php _e('Submit','themater'); ?>" /></div>
 				</form>
 				<?php $theme->hook('content_after'); ?>
-				</div>
 			</td>
 		</tr>
 	</table>
