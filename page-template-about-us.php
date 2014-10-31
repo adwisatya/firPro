@@ -10,8 +10,6 @@ global $theme; get_header(); ?>
 	<img src="<?php echo get_template_directory_uri(); ?>/images/aboutus/banneraboutus.jpg"></img>
 		<table width=960px > 
 		<td width=700px>
-			<a href="/">Home</a> > About Us
-			<h2> About Us</h2>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/aboutus/bannermini.jpg" ></img>
 			<p> is to deliver finest engineering designs and analysis in all our business lines with verified & validated methods for fulfillment of regulations and our clients needs</p>
 			</br>

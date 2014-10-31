@@ -5,8 +5,8 @@
 
 global $theme; get_header(); ?>
 
-<div id="header_teo" style="margin-left:20px;">
-	PROJECTS PORTFOLIO	
+<div id="header_teo" style="margin-left:20px;margin-top:20px;">
+	<h2>PROJECTS PORTFOLIO</h2>
 </div>
 
 <div id="content-header_teo" style="margin-bottom:70px;margin-left:25px;">

@@ -29,7 +29,7 @@
 						 <div class="navbar" width="100%" style="margin-left:0px;margin-right:0px;">
 							<ul class="nav" style="background-color:#F69B02;width:100%;" align="center">
 								<li style="margin-left:60px;margin-right:40px;">
-									<a href="http://localhost/ILPI-ENG/wordpress/">
+									<a href="http://ilpi-eng.com/">
 									<i class="icon-th-large"></i>HOME
 									</a>
 								</li>
@@ -37,7 +37,7 @@
 									&nbsp;
 								</li>
 								<li class="dropdown" style="margin-left:75px;">
-									<a href="http://localhost/ILPI-ENG/wordpress/news-2/" class="dropdown-toggle" data-toggle="dropdown">
+									<a href="http://ilpi-eng.com/news-2/" class="dropdown-toggle" data-toggle="dropdown">
 										<i class="icon-th-large"></i>NEWS
 									</a>
 								</li>
@@ -49,16 +49,16 @@
 								<i class="icon-th-large"></i>PROFILE
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="http://localhost/ILPI-ENG/wordpress/aboutus/">About Us</a></li>
-									<li><a href="http://localhost/ILPI-ENG/wordpress/service/">Services</a></li>
-									<li><a href="http://localhost/ILPI-ENG/wordpress/portofolio-2/">Portofolio</a></li>
+									<li><a href="http://ilpi-eng.com/aboutus/">About Us</a></li>
+									<li><a href="http://ilpi-eng.com/service/">Services</a></li>
+									<li><a href="http://ilpi-eng.com/portofolio-2/">Portofolio</a></li>
 								</ul>
 								</li>
 								<li class="pembatas_header">
 									&nbsp;
 								</li>
 								<li class="dropdown" style="margin-left:75px;">
-									<a href="http://localhost/ILPI-ENG/wordpress/contact/" class="dropdown-toggle" data-toggle="dropdown">
+									<a href="http://ilpi-eng.com/contact/" class="dropdown-toggle" data-toggle="dropdown">
 									<i class="icon-th-large"></i>CONTACT
 								</a>
 							</ul>	

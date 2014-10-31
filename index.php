@@ -1,5 +1,5 @@
 <?php global $theme; get_header(); ?>
-	<table>
+	<table style="margin-bottom:75px">
 		<tr>
 			<td>
 				<div>
