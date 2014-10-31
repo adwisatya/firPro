@@ -19,26 +19,32 @@
 <link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.min.css">
 
-<body <?php body_class(); ?>>
-	<div id="container" style="margin-top:0px;margin-bottom:25px;">
-		<div style="align:center">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" width="960px" height="100px">
-			<table width="100%" align="center">
+<body <?php body_class(); ?> >
+	<div id="container" style="width:960px;margin-top:75px;margin-bottom:75px;">
+		<div style="width:960px;align:center" height="300px">
+			<img style="height:150px" src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" width="960px">
+			<table width="960px" align="center" style="margin-top:5px">
 				<tr>
-					<td border=1 width="100%">
+					<td border=1 width="960px">
 						 <div class="navbar" width="100%" style="margin-left:0px;margin-right:0px;">
-							<ul class="nav" style="background-color:#F69B02;width:100%">
-								<li style="margin-left:0px;margin-right:40px;">
+							<ul class="nav" style="background-color:#F69B02;width:100%;" align="center">
+								<li style="margin-left:60px;margin-right:40px;">
 									<a href="http://localhost/ILPI-ENG/wordpress/">
 									<i class="icon-th-large"></i>HOME
 									</a>
 								</li>
-								<li class="dropdown">
+								<li class="pembatas_header">
+									&nbsp;
+								</li>
+								<li class="dropdown" style="margin-left:75px;">
 									<a href="http://localhost/ILPI-ENG/wordpress/news-2/" class="dropdown-toggle" data-toggle="dropdown">
 										<i class="icon-th-large"></i>NEWS
 									</a>
 								</li>
-								<li class="dropdown">
+								<li class="pembatas_header">
+									&nbsp;
+								</li>
+								<li class="dropdown" style="margin-left:75px;">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="icon-th-large"></i>PROFILE
 								</a>
@@ -48,9 +54,12 @@
 									<li><a href="http://localhost/ILPI-ENG/wordpress/portofolio-2/">Portofolio</a></li>
 								</ul>
 								</li>
-								<li class="dropdown">
-								<a href="http://localhost/ILPI-ENG/wordpress/contact/" class="dropdown-toggle" data-toggle="dropdown">
-								<i class="icon-th-large"></i>CONTACT
+								<li class="pembatas_header">
+									&nbsp;
+								</li>
+								<li class="dropdown" style="margin-left:75px;">
+									<a href="http://localhost/ILPI-ENG/wordpress/contact/" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-th-large"></i>CONTACT
 								</a>
 							</ul>	
 						</div>

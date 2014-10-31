@@ -5,7 +5,7 @@
 
 global $theme; get_header(); ?>
 
-    <div id="main-fullwidth" >
+    <div id="main-fullwidth" style="margin-bottom:30px;">
 	<font face="Arial">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/aboutus/banneraboutus.jpg"></img>
 		<table width=960px > 

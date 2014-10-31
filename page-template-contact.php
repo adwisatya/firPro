@@ -54,7 +54,7 @@
 				?>
 				<form method="post" action="">
 					<input type="hidden" name="contact_form_submit" value="true" />
-					<h3><font color="#CC0500">Contact Us Form</font></h3>
+					<h3><font color="#CC0500">Contact Form</font></h3>
 					<div class="contact-form-label alignleft <?php if($_POST && !$_POST['contact_form_name']) { echo 'contact-form-required'; } ?>"><?php _e('Name','themater'); ?>:</div>
 					<div class="contact-form-input"><input type="text" name="contact_form_name" value="<?php if ( isset($_POST['contact_form_name']) ) { echo esc_attr($_POST['contact_form_name']); } ?>" /></div>
 					<div class="contact-form-label alignleft <?php if($_POST && !$_POST['contact_form_email']) { echo 'contact-form-required'; } ?>"><?php _e('Email','themater'); ?>:</div>

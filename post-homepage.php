@@ -18,6 +18,10 @@
 									array($theme->get_option('featured_image_width'), $theme->get_option('featured_image_height')),
 									array("class" => $theme->get_option('featured_image_position') . " featured_image")
 								); ?></a><?php  
+							}else{
+								echo '<div style="width:100px;height:50px;text-align:center;">
+									no-image-preview
+								</div>';
 							}
 						?>
 					</div>

@@ -3,7 +3,7 @@
 		<tr>
 			<td>
 				<div>
-					<h3 style="margin-left: 15px;">NEWS</h3>
+					<h3 style="margin-left: 15px;">LASTEST NEWS</h3>
 					<?php 
 						$is_post_wrap = 0;
 							if (have_posts()) : while (have_posts()) : the_post();
