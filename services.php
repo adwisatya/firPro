@@ -3,23 +3,16 @@
 * Template Name: Services
 */
 ?>
-	<?php
-		if(!isset($civil_desc)){
-			$civil_desc="gantent";
-		}
-	?>
- <!--
+	
+ 
 	<style>
-		p,li{
-			font-family: Arial;
-			font-size: 14pt;
-		}
-		.judul{
+		#civil-desc,#marine-desc,#metocean-desc,#structural-desc{
 			font-family : Arial;
-			font-size : 20pt;
-			font-color : #000000;	
+			font-size : 12pt;
+			font-color : #000000;
 			z-index: 10;
 		}
+		
 		.p1{
 			font-family : Arial;
 			font-size : 20pt;
@@ -31,54 +24,127 @@
 			font-color : #000000;	
 		}
 		.list-services{
-			width:75%;
+			width:80%;
 			margin : auto auto auto auto;
 		}
-
+		
 		img{
-			width:100%;
-		}		
+			margin-top:20pt;
+		}
+
+		#civil-eng {
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/services/05.png');
+			background-repeat: no-repeat;
+		    width :800px;
+		    height :400px;
+		}
+
+		#civil-eng:hover{
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/services/05-bw.png');
+		}
+		
+		#marine-eng {
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/services/02.png');
+			background-repeat: no-repeat;
+		    width : 800px;
+			height : 400px;
+		}
+
+		#marine-eng:hover{
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/services/02-bw.png');
+		}
+
+
+		#metocean-eng {
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/services/07.png');
+			background-repeat: no-repeat;
+		    width : 800px;
+			height : 400px;
+		}
+
+		#metocean-eng:hover{
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/services/07-bw.png');
+		}
+
+
+		#structural-eng {
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/services/04.png');
+			background-repeat: no-repeat;
+		    width : 800px;
+			height : 400px;
+		}
+
+		#structural-eng:hover{
+			background-image: url('<?php echo get_template_directory_uri(); ?>/images/services/04-bw.png');
+		}
+
+			
 	</style>
-	-->
+	
 <?php global $theme; get_header(); ?>
 
-		<div class="list-services" width="960px">
-				<div id="civil-eng" onclick="OnCivil()" style="margin-top:10px">
-					<div class="judul"> <span class="p1" >Civil  </span>  Engineering </div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/services/05.png" width="920px" >
-					<p id="civil-desc"></p>
-				</div>
+		
+			<div class="list-services" >
+								<img src="<?php echo get_template_directory_uri(); ?>/images/services/civil-engineering.png" height="40px">
 
-				<div id="marine-eng" onclick="OnMarine()" style="margin-top:10px">
-					<div class="judul"> <span class="p1" >Marine  </span>  Engineering </div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/services/02.png" width="920px">
-					<p id="marine-desc"></p>
+				<div id="civil-eng" onclick="OnCivil()">
+					
 				</div>
+				<p id="civil-desc" ></p>
+				
+				<img src="<?php echo get_template_directory_uri(); ?>/images/services/marine-engineering.png" height="40px">
+				
+				<div id="marine-eng" onclick="OnMarine()">
+					
+				</div>
+				<p id="marine-desc"></p>
+								<img src="<?php echo get_template_directory_uri(); ?>/images/services/metocean-and-hydrodynamics.png" height="40px" style="width:100%;">
 
-				<div id="metocean-eng" onclick="OnMetocean()"style="margin-top:10px">
-					<div class="judul"> <span class="p1" >Metocean and Hydrodynamics  </span>  Analysis </div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/services/07.png" width="920px">
-					<p id="metocean-desc"></p>
+				<div id="metocean-eng" onclick="OnMetocean()">
+					
 				</div>
+				<p id="metocean-desc" ></p>
 
-				<div id="structural-eng" onclick="OnStructural()" >
-					<div class="judul"> <span class="p1" >Structural  </span>  Analysis </div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/services/04.png" width="920px">
-					<p id="structural-desc"></p>
+				<img src="<?php echo get_template_directory_uri(); ?>/images/services/structural-analysis.png" height="40px">
+				
+				<div id="structural-eng" onclick="OnStructural()">
+					
 				</div>
+				<p id="structural-desc" ></p>
 		</div>
+	
 	<script>
 		function OnCivil(){
-			document.getElementById("civil-desc").innerHTML = "We provide services in field development planning, conceptual design, and engineering of: <ul><li>building(residental, commercial, educational, and industries)</li><li>foundation and geotechnical analysis</li><li>irrigation, flood control, canal, and other water infrastructures</li></ul>";
+			if(document.getElementById("civil-desc").innerHTML==""){
+				document.getElementById("civil-desc").innerHTML = "We provide services in field development planning, conceptual design, and engineering of: <ul><li>building(residental, commercial, educational, and industries)</li><li>foundation and geotechnical analysis</li><li>irrigation, flood control, canal, and other water infrastructures</li></ul>";
+			}
+			else{
+				document.getElementById("civil-desc").innerHTML = "";	
+			}
 		}
 		function OnMarine(){
-			document.getElementById("marine-desc").innerHTML = "We provide services in field development planning, conceptual design, and engineering of: <ul> <li>port and harbour facilities</li> <li>dredging and reclamation works</li> <li>pipelines</li> <li>coastal defences and structures</li> <li>marine vehicles</li> <li>offshore mooring facilities</li> <li>meteorology and oceanography data survey and analysis</li> </ul>";
+			if(document.getElementById("marine-desc").innerHTML==""){
+				document.getElementById("marine-desc").innerHTML = "We provide services in field development planning, conceptual design, and engineering of: <ul> <li>port and harbour facilities</li> <li>dredging and reclamation works</li> <li>pipelines</li> <li>coastal defences and structures</li> <li>marine vehicles</li> <li>offshore mooring facilities</li> <li>meteorology and oceanography data survey and analysis</li> </ul>";
+			}
+			else{
+				document.getElementById("marine-desc").innerHTML = "";	
+			}
 		}
 		function OnMetocean(){
-			document.getElementById("metocean-desc").innerHTML = "Metocean analysis is one of our know-how-business. We develop our own methods in order to optimize the analysis working hours<br/><br/>Various of environmental databases enable us to achieve reliable results<br/><br/>We have <b>in-house programs</b> to solve metocean-related problems, one of them is <b>AnGel<sup>TM</sup>, a random wave analysis program.</b> <br/><br/>We provide experienced personnels to conduct surveys, analysis, and to provide presentation of the results.";
+			if(document.getElementById("metocean-desc").innerHTML==""){
+				document.getElementById("metocean-desc").innerHTML = "Metocean analysis is one of our know-how-business. We develop our own methods in order to optimize the analysis working hours<br/><br/>Various of environmental databases enable us to achieve reliable results<br/><br/>We have <b>in-house programs</b> to solve metocean-related problems, one of them is <b>AnGel<sup>TM</sup>, a random wave analysis program.</b> <br/><br/>We provide experienced personnels to conduct surveys, analysis, and to provide presentation of the results.";
+			}
+			else{
+				document.getElementById("metocean-desc").innerHTML = "";	
+			}
 		}
 		function OnStructural(){
-			document.getElementById("structural-desc").innerHTML = "Our people always check the <b>validity</b> of the analysis and the <b>accuracy</b> of the analysis results. If it is necessary, <b>verification</b> of the result also can be done by our engineers.<br/><br/><b>Original analysis softwares</b> and <b>in-house programs</b> are used to avoid unnecessary defects in analysis results, maintain our company integrity, and support the intellectual property rights.";
+			if(document.getElementById("structural-desc").innerHTML==""){
+				document.getElementById("structural-desc").innerHTML = "Our people always check the <b>validity</b> of the analysis and the <b>accuracy</b> of the analysis results. If it is necessary, <b>verification</b> of the result also can be done by our engineers.<br/><br/><b>Original analysis softwares</b> and <b>in-house programs</b> are used to avoid unnecessary defects in analysis results, maintain our company integrity, and support the intellectual property rights.";
+			}
+			else{
+				document.getElementById("structural-desc").innerHTML = "";	
+			}
 		}
 	</script>
 

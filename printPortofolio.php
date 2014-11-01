@@ -1,5 +1,5 @@
 <?php
-	$portofolio	=	file("portofolio.txt");
+	$portofolio	=	file("/home/ilpngcom/public_html/wp-content/themes/FreshNews/portofolio.txt");
 	foreach($portofolio as $line){
 		echo '
 			<div class="photos_te">

@@ -2,6 +2,22 @@
 	<table style="margin-bottom:75px">
 		<tr>
 			<td>
+				<div style="margin-top:15px;margin-bottom:225px;">
+					<div id='slideshow'>
+						<?php
+						$dir=	dirname(__FILE__)."/images/slideshow/";
+						$files = scandir($dir,1);
+						for($i = 0;$i < count($files);$i++){
+							echo "<img src='".get_template_directory_uri()."/images/slideshow/".$files[$i]."'>";
+						}
+						?>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+
 				<div>
 					<h3 style="margin-left: 15px;">LASTEST NEWS</h3>
 					<?php 

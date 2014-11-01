@@ -21,16 +21,16 @@
 
 <body <?php body_class(); ?> >
 	<div id="container" style="width:960px;margin-top:75px;margin-bottom:75px;">
-		<div style="width:960px;align:center" height="300px">
+		<div style="width:960px;align:center;margin-right:0px;" height="300px">
 			<img style="height:150px" src="<?php echo get_template_directory_uri(); ?>/images/banner2.jpg" width="960px">
-			<table width="960px" align="center" style="margin-top:5px">
+			<table width="960px" align="center" style="margin-top:5px" cellspacing="0px" cellpadding="0px">
 				<tr>
 					<td border=1 width="960px">
 						 <div class="navbar" width="100%" style="margin-left:0px;margin-right:0px;">
 							<ul class="nav" style="background-color:#F69B02;width:100%;" align="center">
 								<li style="margin-left:60px;margin-right:40px;">
 									<a href="http://ilpi-eng.com/">
-									<i class="icon-th-large"></i>HOME
+									HOME
 									</a>
 								</li>
 								<li class="pembatas_header">
@@ -38,7 +38,7 @@
 								</li>
 								<li class="dropdown" style="margin-left:75px;">
 									<a href="http://ilpi-eng.com/news-2/" class="dropdown-toggle" data-toggle="dropdown">
-										<i class="icon-th-large"></i>NEWS
+										NEWS
 									</a>
 								</li>
 								<li class="pembatas_header">
@@ -46,7 +46,7 @@
 								</li>
 								<li class="dropdown" style="margin-left:75px;">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<i class="icon-th-large"></i>PROFILE
+								PROFILE
 								</a>
 								<ul class="dropdown-menu">
 									<li><a href="http://ilpi-eng.com/aboutus/">About Us</a></li>
@@ -57,9 +57,9 @@
 								<li class="pembatas_header">
 									&nbsp;
 								</li>
-								<li class="dropdown" style="margin-left:75px;">
+								<li class="dropdown" style="margin-left:80px;">
 									<a href="http://ilpi-eng.com/contact/" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="icon-th-large"></i>CONTACT
+									CONTACT
 								</a>
 							</ul>	
 						</div>

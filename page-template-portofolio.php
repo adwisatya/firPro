@@ -57,7 +57,7 @@ global $theme; get_header(); ?>
 		</div>
 		
 	</div>
-		<?php include(get_template_directory_uri()."/printPortofolio.php"); ?>
+		<?php include("/home/ilpngcom/public_html/wp-content/themes/FreshNews/printPortofolio.php"); ?>
 	
 </div>
 

@@ -1,4 +1,5 @@
 <?php global $theme; ?>
+
 	<div id="artikel" >
 		<table>
 			<tr>
