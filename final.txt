@@ -1,0 +1,42 @@
++-------------------------------------------------------------------------------+
+|	ILPI																		|
+|	notulensi pertemuan pada hari Jumat, 31 Oktober 2014						|
++-------------------------------------------------------------------------------+
+[Global]
+v- tampilan mobile tidak sama dengan tampilan desktop
+v- tampilan tablet tidak sama dengan tampilan desktop
+v- sidebar bagian bawah (our values), ukuran proporsional, jarak antara tulisan ke atas kotak, tulisan ke tulisan, dan tulisan ke bawah kotak sama (dibagi 3 dengan tulisan sebagai batasannya).
+v- berikan margin atara header dan konten dari page
+v- gambar banner disamakan dengan ukuran header (biar rata)
+v- gambar banner diganti dengan yang flat 
+[Khusus]
+v- halaman home : max 5 berita teratas
+v- halaman home : penambahan gambar di bawah menu,
+	gambar yang digunakan dari gambar yg di our service dengan tulisan di bawah,
+	gambar ganti-ganti dalam selang waktu tertentu,
+	ukuran gambar sama dengan banner pada about us
+v- halaman news : dua kolom, kolom kiri 20 post terbaru,
+	kolom kanan post grup per bulan
+v- Lastest 20 News
+v- halaman news : tulisan news dihilangin
+v- halaman service : judul untuk setiap gambar ditempatkan di atas 
+	(tadinya di bawah) seperti pada mock-up dengan gambar dan tulisan merupakan
+	file yang berbeda
+v- halaman service : indentasi teks setelah gambar di klik,
+	tulisan rata kiri,
+	huruf diperkecil (default aja, jangan H4),
+	margin pada "structure analysis" setelah diklik di tambah,
+	margin setiap gambar setelah diklik
+v- halaman about us : tulisan "home>about us" dan "about us" pada bagian atas 
+	konten dihilangkan
+
++-------------------------------------------------------------------------------+
+|	Jadwal pertemuan selanjutnya :												|
+|																				|
+|	Minggu, 2 November	: penyerahan dokumen dan tutorial						|
++-------------------------------------------------------------------------------+
+
+
+[homepage]
+Slide to link
+- Dropdown - profile - susah di klik

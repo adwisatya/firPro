@@ -18,7 +18,14 @@
 </head> 
 <link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="<?php echo THEMATER_URL; ?>/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.bs-example{
+    	margin: 20px;
+    }
+</style>
 <body <?php body_class(); ?> >
 	<div id="container" style="width:960px;margin-top:75px;margin-bottom:75px;">
 		<div style="width:960px;align:center;margin-right:0px;" height="300px">

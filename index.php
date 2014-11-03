@@ -1,14 +1,14 @@
 <?php global $theme; get_header(); ?>
-	<table style="margin-bottom:75px">
+	<table style="margin-bottom:75px" width="960px">
 		<tr>
-			<td>
+			<td width="960px">
 				<div style="margin-top:15px;margin-bottom:225px;">
-					<div id='slideshow'>
+					<div id='slideshow' onClick="window.location.href='http://ilpi-eng.com/news-2/'">
 						<?php
 						$dir=	dirname(__FILE__)."/images/slideshow/";
 						$files = scandir($dir,1);
-						for($i = 0;$i < count($files);$i++){
-							echo "<img src='".get_template_directory_uri()."/images/slideshow/".$files[$i]."'>";
+						for($i = 0;$i < count($files)-2;$i++){
+							echo "<img style='width:960px' src='".get_template_directory_uri()."/images/slideshow/".$files[$i]."'>";
 						}
 						?>
 					</div>

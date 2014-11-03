@@ -84,33 +84,33 @@
 <?php global $theme; get_header(); ?>
 
 		
-			<div class="list-services" >
-								<img src="<?php echo get_template_directory_uri(); ?>/images/services/civil-engineering.png" height="40px">
+		<div class="list-services" style="margin-bottom:50px">
+								<img style="height:25px;" src="<?php echo get_template_directory_uri(); ?>/images/services/civil-engineering.png" height="40px">
 
 				<div id="civil-eng" onclick="OnCivil()">
 					
 				</div>
-				<p id="civil-desc" ></p>
+				<p id="civil-desc" style="margin-left:15px;"></p>
 				
-				<img src="<?php echo get_template_directory_uri(); ?>/images/services/marine-engineering.png" height="40px">
+				<img style="height:25px;" src="<?php echo get_template_directory_uri(); ?>/images/services/marine-engineering.png" height="40px">
 				
 				<div id="marine-eng" onclick="OnMarine()">
 					
 				</div>
-				<p id="marine-desc"></p>
-								<img src="<?php echo get_template_directory_uri(); ?>/images/services/metocean-and-hydrodynamics.png" height="40px" style="width:100%;">
+				<p id="marine-desc" style="margin-left:15px;"></p>
+								<img style="height:25px;" src="<?php echo get_template_directory_uri(); ?>/images/services/metocean-and-hydrodynamics.png" height="40px" style="width:100%;">
 
 				<div id="metocean-eng" onclick="OnMetocean()">
 					
 				</div>
-				<p id="metocean-desc" ></p>
+				<p id="metocean-desc" style="margin-left:15px;"></p>
 
-				<img src="<?php echo get_template_directory_uri(); ?>/images/services/structural-analysis.png" height="40px">
+				<img style="height:25px;" src="<?php echo get_template_directory_uri(); ?>/images/services/structural-analysis.png" height="40px">
 				
 				<div id="structural-eng" onclick="OnStructural()">
 					
 				</div>
-				<p id="structural-desc" ></p>
+				<p id="structural-desc" style="margin-left:15px;"></p>
 		</div>
 	
 	<script>
